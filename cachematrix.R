@@ -14,9 +14,9 @@ list(set = set, get = get,
      setmatrix = setmatrix,
      getmatrix= getmatrix)
 }
-##This function checks the cache for the inverse matrix; if not in cache, it calculates it
+
 cacheSolve <- function(x=matrix(), ...) {
-  
+ ##This function checks the cache for the inverse matrix; if not in cache, it calculates it 
  m<-x$getmatrix()
   if(!is.null(m)){
     message("getting cached data")
